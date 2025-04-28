@@ -1,4 +1,4 @@
-public class Record {
+public class Record implements Comparable<Record> {
     private String regione;
     private int anno;
     private double valore;
@@ -33,5 +33,16 @@ public class Record {
     @Override
     public String toString() {
         return regione + ";" + anno + ";" + valore;
+    }
+
+    @Override
+    public int compareTo(Record o) {
+        if(valore == o.getValore()) {
+            return 0;
+        }else if(valore > o.getValore()) {
+            return 1;
+        }else {
+            return -1;
+        }
     }
 }
