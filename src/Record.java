@@ -1,9 +1,9 @@
 public class Record {
     private String regione;
-    private String anno;
-    private String valore;
+    private int anno;
+    private double valore;
 
-    public Record(String regione, String anno, String valore) {
+    public Record(String regione, int anno, double valore) {
         this.regione = regione;
         this.anno = anno;
         this.valore = valore;
@@ -16,17 +16,17 @@ public class Record {
         this.regione = regione;
     }
 
-    public String getAnno() {
+    public int getAnno() {
         return anno;
     }
-    public void setAnno(String anno) {
+    public void setAnno(int anno) {
         this.anno = anno;
     }
 
-    public String getValore() {
+    public double getValore() {
         return valore;
     }
-    public void setValore(String valore) {
+    public void setValore(double valore) {
         this.valore = valore;
     }
 
